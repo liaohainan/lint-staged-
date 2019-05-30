@@ -1,5 +1,29 @@
 # lint-staged-简易实现
 
+标准配置
+```
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+},
+"lint-staged": {
+  "*.js": [
+    "npx eslint --fix",
+    "git add"
+  ],
+  "*.vue": [
+    "npx eslint --fix",
+    "git add"
+  ]
+},
+```
+
+
+或者自己写
+
+
+
 ```js
 console.log('start check code')
 const shell = require('shelljs')
