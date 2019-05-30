@@ -1,6 +1,6 @@
 # lint-staged-简易实现
 
-```
+```js
 console.log('start check code')
 const shell = require('shelljs')
 
